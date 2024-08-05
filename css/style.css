@@ -39,6 +39,7 @@ header{
 nav{
     text-align: right;
     padding: 30px 50px 0 0;
+    font-size: 20px;
 }
 
 nav > a{
