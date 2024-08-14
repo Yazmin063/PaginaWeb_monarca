@@ -29,10 +29,8 @@ header{
     width: 100%;
     height: 500px;
     background: #c96c26;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right,hsla(26, 68%, 47%, 0.50), hsla(32, 92%, 59%, 0.50), hsla(43, 63%, 81%, 0.50)),url(../img/dron/dron_13.png);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right,hsla(26, 68%, 47%, 0.50), hsla(32, 92%, 59%, 0.50), hsla(43, 63%, 81%, 0.50)),url(../img/dron/dron_13.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* background-size: cover; */
-    background-attachment: fixed;
+    background: -webkit-linear-gradient(to right,hsla(26, 68%, 47%, 0.50), hsla(32, 92%, 59%, 0.50), hsla(43, 63%, 81%, 0.50));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,hsla(26, 68%, 47%, 0.50), hsla(32, 92%, 59%, 0.50), hsla(43, 63%, 81%, 0.50)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     position:relative;
 }
 
@@ -44,7 +42,7 @@ nav{
 
 nav > a{
     color: #000;
-    font-weight: 300;
+    font-weight: 500;
     text-decoration: none;
     margin-right: 10px;
 }
@@ -53,25 +51,38 @@ nav > a:hover{
     text-decoration: underline;
 }
 
-header .textos-header{
+header .test{
     display: flex;
-    height: 300px;
-    width: 100%;
     align-items: center;
     justify-content: center;
+    height: 300px;
+    width: 100%;
+}
+
+header .textos-header{
+    display: flex;
     flex-direction: column;
     text-align: center;
+    margin-right: 20px;
 }
 
 .textos-header h1{
     font-size: 50px;
     color: #000;
+    margin: 0;
 }
 .textos-header h2{
     font-size: 30px;
     font-weight: 300;
     color: #000;
+    margin: 0;
 }
+
+header .test img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
 
 .wave{
     position:absolute;
@@ -91,7 +102,9 @@ main .sobre-nosotros{
 }
 
 .imagen-acerca-de{
-    width: 40%;
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
 }
 
 .sobre-nosotros .contenido-textos{
@@ -188,7 +201,7 @@ main .sobre-nosotros{
     background: #231e1a;
     display: flex;
     flex-direction: column;
-    width: 18%;
+    width: 14%;
     height: 300px;
     text-align: center;
     align-items: center;
