@@ -24,6 +24,13 @@ body{
     margin-bottom: 60px;
 }
 
+.subtitulo{
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
 /* Header */
 header{
     width: 100%;
@@ -247,6 +254,31 @@ main .sobre-nosotros{
     width: 28%;
     text-align: center;
 }
+
+.servicio-ind ul{
+    padding-left: 20px;
+    text-align: left;
+}
+
+.servicio-ind p {
+    display: flex; /* Usar flexbox para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    padding: 10px;
+    background-color: #c96c26; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    font-weight: bold !important; /* Texto en negritas */
+    border-radius: 5px; /* Esquinas redondeadas */
+    margin-top: 15px; /* Espacio adicional en la parte superior */
+    width: 100%; /* Hace que el botón ocupe todo el ancho del contenedor */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para darle un efecto de botón */
+}
+
+
+.servicio-ind p:hover {
+    background-color: #a6551f; /* Color de fondo más oscuro al pasar el mouse */
+}
+
 
 .servicio-ind img{
     width: 90%;
