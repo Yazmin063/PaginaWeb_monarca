@@ -90,17 +90,10 @@ header .test img{
     max-width: 100%;
 }
 
-
-.wave{
-    position:absolute;
-    bottom: 0;
-    width: 100%;
-}
-
 /* Acerca de Monarca */
 
 main .sobre-nosotros{
-    padding: 10px 0 60px 0;
+    padding: 30px 0 60px 0;
 }
 
 .contenedor-sobre-nosotros{
@@ -334,9 +327,41 @@ footer{
 }
 
 @media screen and (max-width:900px){
-    header{
-        background-position: center;
+    header {
+        height: auto; /* Deja que la altura del header se adapte al contenido */
+        padding: 20px;
     }
+
+    nav {
+        margin: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 10px;
+        font-size: 18px;
+    }
+
+    .test {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .textos-header h1 {
+        font-size: 40px;
+    }
+
+    .textos-header h2 {
+        font-size: 25px;
+    }
+
+    .test img {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+
     .contenedor-sobre-nosotros{
         flex-direction: column;
         justify-content: center;
@@ -347,7 +372,7 @@ footer{
         width: 90%;
     }
     .imagen-acerca-de{
-        width: 90%;
+        max-width: 100%;
     }
 
     /* Galeria */
@@ -390,21 +415,28 @@ footer{
 }
 
 @media screen and (max-width:500px) {
-    nav{
+    nav {
+        flex-direction: column;
         text-align: center;
-        padding: 30px 0 0 0;
+        padding: 10px 0;
     }
 
-    nav > a{
-        margin-right: 5px;
+    nav a {
+        margin: 5px 0;
+        font-size: 16px;
     }
 
-    .textos-header h1{
-        font-size: 35px;
+    .textos-header h1 {
+        font-size: 30px;
     }
 
-    .textos-header h2{
-        font-size: 20px;
+    .textos-header h2 {
+        font-size: 18px;
+    }
+
+    .test img {
+        width: 100%;
+        margin-top: 15px;
     }
 
     /* Acerca de monarca */
