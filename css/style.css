@@ -58,6 +58,25 @@ nav > a:hover{
     text-decoration: underline;
 }
 
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+}
+
 header .test{
     display: flex;
     align-items: center;
@@ -415,9 +434,30 @@ footer{
 }
 
 @media screen and (max-width:500px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        top: 50px;
+        right: 20px;
+        padding: 20px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li a {
+        color: black;
+    }
+
     nav {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
         padding: 10px 0;
     }
 

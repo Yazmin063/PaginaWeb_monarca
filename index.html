@@ -10,12 +10,17 @@
 <body>
   <header id="inicio">
     <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#sobre-nosotros">Acerca de</a>
-      <a href="#dron">Dron</a>
-      <a href="#equipo">Equipo</a>
-      <a href="#servicios">Planes</a>
-      <a href="#footer">Contacto</a>
+      <div class="menu-icon" onclick="toggleMenu()">
+        ☰
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-nosotros">Acerca de</a></li>
+        <li><a href="#dron">Dron</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#servicios">Planes</a></li>
+        <li><a href="#footer">Contacto</a></li>
+      </ul>
     </nav>
     <div class="test">
       <div class="textos-header">
@@ -219,5 +224,11 @@
     </div>
     <h2 class="titulo-final">&copy;Equipo Monarca | CENIDET 2024</h2>
   </footer>
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
